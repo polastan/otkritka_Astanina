@@ -76,6 +76,9 @@ fun GreetingImage(message: String, from: String, modifier: Modifier = Modifier) 
         Image(
             painter = image,
             contentDescription = null,
+            modifier = Modifier. fillMaxSize(),
+            contentScale = ContentScale. Crop,
+            alpha = 0.5F
 
         )
         GreetingText(
